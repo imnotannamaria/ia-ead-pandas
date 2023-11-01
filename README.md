@@ -14,24 +14,30 @@ The purpose is that with these data sets and based on some hypotheses that we wi
 
 ## Creating a dataframe by csv - read_csv
 
-```bash
-df_customers = pd.read_csv('./datasets/churn_customers.csv')
+```python
+df_contracts = pd.read_csv('./datasets/churn_customers.csv')
 ```
 
 #### The firsts registers - head(x)
 
-```bash
+```python
 df_contracts.head(5)
 ```
 
 #### The last registers - tail(x)
 
-```bash
+```python
 df_contracts.tail(5)
 ```
 
 #### Dataframe info - info()
 
-```bash
-df_customers.info()
+```python
+df_contracts.info()
+```
+
+## Data transformation
+
+```python
+df_contracts.TotalCharges = pd.to_numeric(df_contracts.TotalCharges, errors='coerce')
 ```
