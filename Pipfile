@@ -8,3 +8,4 @@ pandas = "*"
 matplotlib = "*"
 
 [dev-packages]
+ipykernel = "*"
