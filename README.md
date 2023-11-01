@@ -12,7 +12,9 @@ The purpose is that with these data sets and based on some hypotheses that we wi
 
 - churn_services.csv = Services data
 
-## Creating a dataframe by csv - read_csv
+## Collection and preparation of data
+
+### Creating a dataframe by csv - read_csv
 
 ```python
 df_contracts = pd.read_csv('./datasets/churn_customers.csv')
