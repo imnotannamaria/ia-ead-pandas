@@ -12,7 +12,7 @@ The purpose is that with these data sets and based on some hypotheses that we wi
 
 - churn_services.csv = Services data
 
-## Collection and preparation of data
+## Collection of data
 
 ### Creating a dataframe by csv - read_csv
 
@@ -56,4 +56,17 @@ df_customers.rename(columns={'SeniorCitizen': 'Above65YearsOld'}, inplace=True)
 ```python
 # Rename using list - All columns
 df_customers.columns = ['ClientID', 'Gender', 'Above65YearsOld', 'HavePartner', 'HaveDependents']
+```
+
+### Mearaging dataframes
+
+```python
+# Mearning customers and services
+
+df_temp = df_customers.merge(df_services, on=['ClientID'])
+```
+
+```python
+# Mearging customers and services - using diferents columns name to merge
+df_churn_temp = df_temp.merge(df_contracts, left_on=['ClientID'], right_on=['customerID'])
 ```
