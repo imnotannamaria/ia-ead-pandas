@@ -38,6 +38,20 @@ df_contracts.info()
 
 ## Data transformation
 
+#### Change column data type
+
 ```python
 df_contracts.TotalCharges = pd.to_numeric(df_contracts.TotalCharges, errors='coerce')
+```
+
+#### Change column name
+
+```python
+# Rename some columns
+df_customers.rename(columns={'SeniorCitizen': 'Above65YearsOld'}, inplace=True)
+```
+
+```python
+# Rename using list - All columns
+df_customers.columns = ['ClientID', 'Gender', 'Above65YearsOld', 'HavePartner', 'HaveDependents']
 ```
