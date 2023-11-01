@@ -58,15 +58,20 @@ df_customers.rename(columns={'SeniorCitizen': 'Above65YearsOld'}, inplace=True)
 df_customers.columns = ['ClientID', 'Gender', 'Above65YearsOld', 'HavePartner', 'HaveDependents']
 ```
 
-### Mearaging dataframes
+### Merging dataframes
 
 ```python
-# Mearning customers and services
-
+# Merging customers and services
 df_temp = df_customers.merge(df_services, on=['ClientID'])
 ```
 
 ```python
-# Mearging customers and services - using diferents columns name to merge
+# Merging customers and services - using diferents columns name to merge
 df_churn_temp = df_temp.merge(df_contracts, left_on=['ClientID'], right_on=['customerID'])
+```
+
+### Removing columns
+
+```python
+df_churn.drop(['customerID'], axis=1, inplace=True)
 ```
