@@ -21,3 +21,7 @@ Univariate analysis is a fundamental statistical technique in the field of Artif
 1. Client age group has a strong association with Churn
 2. A client who com less than 6 months of active contract is more prone to Churn
 3. Customer with monthly contracts are prone to Churn
+
+## Bivariate Analysis
+
+Bivariate Analysis is a statistical approach that focuses on the relationship between two variables in a dataset. Unlike Univariate Analysis, which explores individual features, Bivariate Analysis seeks to understand how two variables are interconnected and whether there is any significant relationship between them.
