@@ -81,3 +81,22 @@ df_churn.drop(['customerID'], axis=1, inplace=True)
 ```python
 df_churn.isna().sum()
 ```
+
+### Dealing with missing values
+
+#### Drop
+
+```python
+# Remove the column with missing value
+df_churn.drop(columns=['TotalCharges'], axis=1)
+```
+
+```python
+# Remove columns with missing values
+df_churn.dropna(axis=1)
+```
+
+```python
+# Remove columns where ALL values are missing
+df_churn.dropna(axis=1, how='all')
+```
