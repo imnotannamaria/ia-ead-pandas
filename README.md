@@ -100,3 +100,15 @@ df_churn.dropna(axis=1)
 # Remove columns where ALL values are missing
 df_churn.dropna(axis=1, how='all')
 ```
+
+#### Input
+
+```python
+# Fill all values of the dataframe with 0
+df_churn.fillna(0)
+```
+
+```python
+# Fill default values depending on
+df_churn.fillna(value={'TotalCharges': 0, 'Genero': 'Não declarado'})
+```
