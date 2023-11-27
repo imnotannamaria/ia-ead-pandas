@@ -75,3 +75,9 @@ df_churn_temp = df_temp.merge(df_contracts, left_on=['ClientID'], right_on=['cus
 ```python
 df_churn.drop(['customerID'], axis=1, inplace=True)
 ```
+
+### Missing values detection
+
+```python
+df_churn.isna().sum()
+```
