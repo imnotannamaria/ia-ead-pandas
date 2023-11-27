@@ -110,5 +110,15 @@ df_churn.fillna(0)
 
 ```python
 # Fill default values depending on
-df_churn.fillna(value={'TotalCharges': 0, 'Genero': 'Não declarado'})
+df_churn.fillna(value={'TotalCharges': 0, 'Gender': 'Not declared'})
 ```
+
+## Univariate Analysis
+
+Univariate analysis is a fundamental statistical technique in the field of Artificial Intelligence (AI), used to examine and understand the behavior of a single variable in a dataset. In other words, it focuses on the analysis of one feature or variable at a time, without considering relationships with other variables.
+
+### Hypotheses
+
+1. Client age group has a strong association with Churn
+2. A client who com less than 6 months of active contract is more prone to Churn
+3. Customer with monthly contracts are prone to Churn
